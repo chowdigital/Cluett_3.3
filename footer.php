@@ -10,6 +10,14 @@
  */
 
 ?>
+	<div id="google-reviews"></div>
+	<script>
+		jQuery(document).ready(function($) {
+			 	$("#google-reviews").googlePlaces({
+			   	});
+		});
+	</script>
+
 
 	</div><!-- #content -->
 
