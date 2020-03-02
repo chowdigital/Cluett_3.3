@@ -1,0 +1,148 @@
+#google-reviews {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*display: grid;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+}
+#google-reviews h2 {
+  text-align: center;
+  width: 100%;
+}
+.review-item {
+  border: none
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+@media ( max-width:1200px) {
+  .review-item {
+    flex: 1 1 50%;
+  }
+}
+
+@media ( max-width:450px) {
+  .review-item {
+    flex: 1 1 90%;
+  }
+}
+
+.review-item-long, .review-item {
+  border: none
+  margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  width: 90%;
+}
+@media ( min-width:1000px) {
+  .review-item-long, .review-item {
+    width: 30%;
+  }
+  }
+
+
+
+.review-header{
+  display: flex;
+}
+
+.review-picture{
+  width: 5em;
+  height: auto;
+  align-self: center;
+  margin-right: 1em;
+}
+
+.review-usergrade{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.review-meta, .review-stars {
+  text-align: center;
+  font-size: 115%;
+}
+
+.review-author {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.review-date {
+  opacity: .6;
+  display: block;
+}
+
+.review-text {
+  line-height: 1.55;
+  text-align: left;
+  max-width: 100%;
+  text-align: left;
+}
+
+.review-stars ul {
+  display: inline-block;
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.review-stars ul li {
+  float: left;
+  list-style: none !important;
+  margin-right: 1px;
+  line-height: 1;
+}
+
+.review-stars ul li i {
+  color: #ca0d00;
+  /* Google's Star Orange in Nov 2017 */
+  font-size: 1em;
+  font-style: normal;
+}
+
+.review-stars ul li i.inactive {
+  color: #ca0d00;
+}
+
+.star:after {
+  content: "\2605";
+}
+
+
+.buttons {
+  margin: 20px 0 0 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.more-reviews {
+  text-align: center;
+}
+
+.write-review {
+  text-align: center;
+}
+
+.more-reviews a,
+.write-review a {
+  margin: 5px;
+  border: 1px #ca0d00 solid;
+  border-radius: 40px;
+  padding: 10px;
+  background-color: #ca0d00;
+  color: #FFF;
+  text-decoration: none;
+}
+
