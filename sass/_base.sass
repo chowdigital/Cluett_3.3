@@ -33,14 +33,19 @@ section
 
 .contentBox
 	text-align: center
+
 .catagoryPic
 	margin: auto
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
 
-@media only screen and (min-width: $break_sml)
+@media only screen and (min-width: $break_med)
 	.contentBox
 		width: 50%
 		height: auto
 		float: left
+		padding: 0em 2em
 
 	.ourWork
 		text-align: center
@@ -53,3 +58,27 @@ section
 
 .entry-header, .entry-content
 	padding: 2em
+
+
+.big-btn
+	background-color: $green
+	color: $white
+	border: none
+	padding: 0.5em
+	margin-bottom: 0.5em
+	@include txt-thin
+	font-size: 2em
+	color: $white
+	text-align: center
+	border-radius: 0px
+
+.big-btn:hover
+	background-color: $blue
+	border-radius: 0px
+
+.intro-box
+	background-color: $green
+	color: $white
+
+.page-content, .entry-content, .entry-summary
+	margin: 0

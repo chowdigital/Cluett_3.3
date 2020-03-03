@@ -12,11 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <div class="heroImage" style="background-image:url('<?php the_post_thumbnail_url(); ?>');"></div>
-		
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<div class="intro-box">	
+
 
 
 	<div class="entry-content">
@@ -29,28 +27,34 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
+</div>	
 		<section class="mainCat">
-			<H1>BESPOKE FURNATURE</H1>
+			<H1><?php the_field('cat-heading'); ?></H1>
 			<div class="contentBox">
-				<div class="catagoryPic" style="background-image:url('<?php the_post_thumbnail_url(); ?>');">
+				<a href="shop">
+				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_1_img'); ?>');">
 				</div>
-				<h2>Fitted Furnature</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sint exercitationem debitis, porro, ipsa molestias consequuntur at illum quis non.</p>
+				<h2><?php the_field('cat_1'); ?></h2>
+			</a>
+				<p><?php the_field('cat_1_copy'); ?></p>
+
 			</div>
 			<div class="contentBox">
-				<div class="catagoryPic" style="background-image:url('<?php the_post_thumbnail_url(); ?>');">
+				<a href="shop">
+				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_2_img'); ?>');">
 				</div>
-				<h2>Freestanding Furnature</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sint exercitationem debitis, porro, ipsa molestias consequuntur at illum quis non.</p>
+				<h2><?php the_field('cat_2'); ?></h2>
+				</a>
+				<p><?php the_field('cat_2_copy'); ?></p>
+
 			</div>
 		</section>
 
 		
 	<section class="ourWork">
-		<h2>Our Work</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eaque architecto quaerat excepturi dolore! Recusandae, asperiores, esse! Optio rerum animi, earum modi, illum cumque consequuntur porro reprehenderit nisi ut error. Voluptas veritatis quo ipsa accusantium quisquam accusamus deleniti velit. Quo.</p>
-		<button>View Projects</button>
+		<h2><?php the_field('our_work'); ?></h2>
+		<p><?php the_field('our_work_copy'); ?></p>
+		<button class="big-btn">View Projects</button>
 	</section>
 
 

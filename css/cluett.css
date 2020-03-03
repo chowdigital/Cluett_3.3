@@ -3,16 +3,17 @@ h1 {
   font-weight: 800;
   font-style: normal;
   letter-spacing: 0.1em;
-  font-size: 3em; }
+  font-size: 3em;
+  text-transform: uppercase; }
 
 h2, h3 {
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 100;
-  font-style: normal;
-  text-transform: uppercase; }
+  font-style: normal; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  text-transform: uppercase; }
 
 h3 {
   font-size: 2em; }
@@ -72,13 +73,17 @@ section {
   text-align: center; }
 
 .catagoryPic {
-  margin: auto; }
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .contentBox {
     width: 50%;
     height: auto;
-    float: left; }
+    float: left;
+    padding: 0em 2em; }
 
   .ourWork {
     text-align: center; } }
@@ -90,6 +95,31 @@ section {
 
 .entry-header, .entry-content {
   padding: 2em; }
+
+.big-btn {
+  background-color: #042C24;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px; }
+
+.big-btn:hover {
+  background-color: #154043;
+  border-radius: 0px; }
+
+.intro-box {
+  background-color: #042C24;
+  color: #fff; }
+
+.page-content, .entry-content, .entry-summary {
+  margin: 0; }
 
 .menu-item a, .menu-item a:visited, .site-title a, .site-title a:visited {
   color: #D6D6D6; }
@@ -222,7 +252,18 @@ section {
 
   .site-title {
     text-transform: uppercase;
-    text-decoration: none; } }
+    text-decoration: none; }
+
+  .menu-item-82 a, .menu-item-82 a:hover {
+    color: transparent;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-size: fit; }
+
+  .menu-item-82 a:hover {
+    opacity: 0.7; } }
 .site-title a {
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 700;
@@ -231,17 +272,6 @@ section {
     width: auto;
     height: 2em;
     margin-bottom: -0.5em; }
-
-.menu-item-82 a, .menu-item-82 a:hover {
-  color: transparent;
-  width: 1.5em;
-  height: 1.5em;
-  background-image: url("../img/basket.svg");
-  background-repeat: no-repeat;
-  background-size: fit; }
-
-.menu-item-82 a:hover {
-  opacity: 0.7; }
 
 .site-info-column a:link, .site-info-column a:visited {
   color: #D6D6D6; }
@@ -297,52 +327,17 @@ section {
   width: 100%;
   padding: 1em; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="url"], .contact-form input[type="password"], .contact-form input[type="search"], .contact-form input[type="number"], .contact-form input[type="tel"], .contact-form input[type="range"], .contact-form input[type="date"], .contact-form input[type="month"], .contact-form input[type="week"], .contact-form input[type="time"], .contact-form input[type="datetime"], .contact-form input[type="datetime-local"], .contact-form input[type="color"], .contact-form textarea {
   color: #6A808E;
   background-color: transparent;
   border: 2px solid #D6D6D6;
   border-radius: 0px;
   padding: 0.5em;
   margin-bottom: 0.5em; }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
+.contact-form input[type="text"]:focus, .contact-form input[type="email"]:focus, .contact-form input[type="url"]:focus, .contact-form input[type="password"]:focus, .contact-form input[type="search"]:focus, .contact-form input[type="number"]:focus, .contact-form input[type="tel"]:focus, .contact-form input[type="range"]:focus, .contact-form input[type="date"]:focus, .contact-form input[type="month"]:focus, .contact-form input[type="week"]:focus, .contact-form input[type="time"]:focus, .contact-form input[type="datetime"]:focus, .contact-form input[type="datetime-local"]:focus, .contact-form input[type="color"]:focus, .contact-form textarea:focus {
   border: 3px solid #D6D6D6;
   color: #fff; }
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+.contact-form button, .contact-form input[type="button"], .contact-form input[type="reset"], .contact-form input[type="submit"] {
   background-color: transparent;
   border: none;
   padding: 0.5em;
@@ -353,16 +348,37 @@ input[type="submit"] {
   font-size: 2em;
   color: #fff;
   text-align: right; }
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+.contact-form button:hover, .contact-form input[type="button"]:hover, .contact-form input[type="reset"]:hover, .contact-form input[type="submit"]:hover {
   background-color: #154043;
   border-radius: 0px; }
 
-.site-main {
-  padding: 2em; }
+.entry-content input[type="text"], .entry-content input[type="email"], .entry-content input[type="url"], .entry-content input[type="password"], .entry-content input[type="search"], .entry-content input[type="number"], .entry-content input[type="tel"], .entry-content input[type="range"], .entry-content input[type="date"], .entry-content input[type="month"], .entry-content input[type="week"], .entry-content input[type="time"], .entry-content input[type="datetime"], .entry-content input[type="datetime-local"], .entry-content input[type="color"], .entry-content textarea, .comments-area input[type="text"], .comments-area input[type="email"], .comments-area input[type="url"], .comments-area input[type="password"], .comments-area input[type="search"], .comments-area input[type="number"], .comments-area input[type="tel"], .comments-area input[type="range"], .comments-area input[type="date"], .comments-area input[type="month"], .comments-area input[type="week"], .comments-area input[type="time"], .comments-area input[type="datetime"], .comments-area input[type="datetime-local"], .comments-area input[type="color"], .comments-area textarea {
+  color: #6A808E;
+  background-color: transparent;
+  border: 2px solid #154043;
+  border-radius: 0px;
+  padding: 0.5em;
+  margin-bottom: 0.5em; }
+.entry-content input[type="text"]:focus, .entry-content input[type="email"]:focus, .entry-content input[type="url"]:focus, .entry-content input[type="password"]:focus, .entry-content input[type="search"]:focus, .entry-content input[type="number"]:focus, .entry-content input[type="tel"]:focus, .entry-content input[type="range"]:focus, .entry-content input[type="date"]:focus, .entry-content input[type="month"]:focus, .entry-content input[type="week"]:focus, .entry-content input[type="time"]:focus, .entry-content input[type="datetime"]:focus, .entry-content input[type="datetime-local"]:focus, .entry-content input[type="color"]:focus, .entry-content textarea:focus, .comments-area input[type="text"]:focus, .comments-area input[type="email"]:focus, .comments-area input[type="url"]:focus, .comments-area input[type="password"]:focus, .comments-area input[type="search"]:focus, .comments-area input[type="number"]:focus, .comments-area input[type="tel"]:focus, .comments-area input[type="range"]:focus, .comments-area input[type="date"]:focus, .comments-area input[type="month"]:focus, .comments-area input[type="week"]:focus, .comments-area input[type="time"]:focus, .comments-area input[type="datetime"]:focus, .comments-area input[type="datetime-local"]:focus, .comments-area input[type="color"]:focus, .comments-area textarea:focus {
+  border: 2px solid #154043;
+  color: #131920; }
+.entry-content button, .entry-content input[type="button"], .entry-content input[type="reset"], .entry-content input[type="submit"], .comments-area button, .comments-area input[type="button"], .comments-area input[type="reset"], .comments-area input[type="submit"] {
+  background-color: #042C24;
+  border: none;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff;
+  text-align: center; }
+.entry-content button:hover, .entry-content input[type="button"]:hover, .entry-content input[type="reset"]:hover, .entry-content input[type="submit"]:hover, .comments-area button:hover, .comments-area input[type="button"]:hover, .comments-area input[type="reset"]:hover, .comments-area input[type="submit"]:hover {
+  background-color: #154043;
+  border-radius: 0px; }
+.entry-content span.wpcf7-list-item, .comments-area span.wpcf7-list-item {
+  display: block;
+  width: 100%; }
 
 .woocommerce-breadcrumb a:link {
   color: #E69225; }
@@ -459,7 +475,11 @@ ul.products {
   font-weight: 300; }
 
 .the-loop {
-  width: 100%; }
+  width: 100%;
+  padding: 2em; }
+
+.comments-area, .entry-footer, .post-navigation {
+  padding: 2em; }
 
 .blog-link {
   width: 100%;
@@ -470,6 +490,9 @@ ul.products {
 
 .blog-text {
   width: 100%; }
+
+.post-thumbnail {
+  padding: 2em; }
 
 @media only screen and (min-width: 600px) {
   .blog-link {
@@ -482,6 +505,9 @@ ul.products {
 
   .blog-text {
     width: 70%;
-    margin-left: 2em; } }
+    margin-left: 2em; }
+
+  .post-thumbnail {
+    width: 50%; } }
 
 /*# sourceMappingURL=cluett.css.map */

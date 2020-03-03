@@ -1,63 +1,51 @@
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea 
-	color: $grey
-	background-color: transparent
-	border: 2px solid $light
-	border-radius: 0px
-	padding: 0.5em
-	margin-bottom: 0.5em
+.contact-form
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea 
+		color: $grey
+		background-color: transparent
+		border: 2px solid $light
+		border-radius: 0px
+		padding: 0.5em
+		margin-bottom: 0.5em
+	input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus 
+		border: 3px solid $light
+		color: $white
+	button, input[type="button"], input[type="reset"], input[type="submit"]
+		background-color: transparent
+		border: none
+		padding: 0.5em
+		margin-bottom: 0.5em
+		@include txt-thin
+		font-size: 2em
+		color: $white
+		text-align: right
+	button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover
+		background-color: $blue
+		border-radius: 0px
 
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus 
-	border: 3px solid $light
-	color: $white
-
-button, 
-input[type="button"], 
-input[type="reset"], 
-input[type="submit"]
-	background-color: transparent
-	border: none
-	padding: 0.5em
-	margin-bottom: 0.5em
-	@include txt-thin
-	font-size: 2em
-	color: $white
-	text-align: right
-
-button:hover, 
-input[type="button"]:hover, 
-input[type="reset"]:hover, 
-input[type="submit"]:hover
-	background-color: $blue
-	border-radius: 0px
+.entry-content, .comments-area
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea 
+		color: $grey
+		background-color: transparent
+		border: 2px solid $blue
+		border-radius: 0px
+		padding: 0.5em
+		margin-bottom: 0.5em
+	input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus 
+		border: 2px solid $blue
+		color: $dark
+	button, input[type="button"], input[type="reset"], input[type="submit"]
+		background-color: $green
+		border: none
+		padding: 0.5em
+		margin-bottom: 0.5em
+		@include txt-thin
+		font-size: 2em
+		color: $white
+		text-align: center
+	button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover
+		background-color: $blue
+		border-radius: 0px
+	span.wpcf7-list-item
+		display: block
+		width: 100%
 
