@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Cluett_3.3
+ * @package Cloudsdale_1.0
  */
 
 ?>
@@ -22,30 +22,26 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cluett-3-3' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'base-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$cluett_3_3_description = get_bloginfo( 'description', 'display' );
-			if ( $cluett_3_3_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cluett_3_3_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+		
+				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/cluettlogo.svg"/>
+					<?php bloginfo( 'name' ); ?></a></div>
+				
+		
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cluett-3-3' ); ?></button>
+	<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<div id="hamburger" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -56,3 +52,5 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+		
