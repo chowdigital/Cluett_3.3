@@ -1,19 +1,19 @@
 /*!
-Theme Name: Cluett 3.3
+Theme Name: Cloudsdale_1.0
 Theme URI: http://underscores.me/
 Author: Sean Cloudsdale
 Author URI: http://seancloudsdale.com
-Description: Cluett 3.3
+Description: Base Theme for WP
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cluett-3-3
+Text Domain: base-theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Cluett 3.3 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Cloudsdale_1.0 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -985,8 +985,6 @@ object {
 }
 
 
-/* animate smoohstate.js */
-
 .site-content {
 	-webkit-transition: -webkit-transform .28s, opacity .28s;
 	-ms-transition: -o-transform .28s, opacity .28s;
@@ -1001,3 +999,56 @@ object {
 	opacity: 0;
 }
 
+/* FORM CSS START */
+
+ /* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+} 
+
+/* END: form css;
