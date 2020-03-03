@@ -16,18 +16,18 @@ Thank you guys!
     // This is the easiest way to have default options.
     var settings = $.extend({
       // These are the defaults.
-      header: "<h2>Latest Google Reviews</h2>",
+      header: "<h2>Recent Google Reviews</h2>",
       footer: '',
-      maxRows: 6,
-      minRating: 4,
+      maxRows: 4,
+      minRating: 5,
       months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       textBreakLength: "90",
       shortenNames: true,
       placeId: "ChIJJ7Vh17MddkgRf6OfLqsPA7k",
-      moreReviewsButtonUrl: '',
-      moreReviewsButtonLabel: 'Show More Reviews',
-      writeReviewButtonUrl: '',
-      writeReviewButtonLabel: 'Write New Review',
+      moreReviewsButtonUrl: 'https://www.google.com/search?client=firefox-b-d&q=cluett+carpentry',
+      moreReviewsButtonLabel: 'See More Reviews',
+      writeReviewButtonUrl: 'https://www.google.com/search?client=firefox-b-d&q=cluett+carpentry',
+      writeReviewButtonLabel: 'Write a Review',
       showReviewDate: false,
       showProfilePicture: true
     }, options);

@@ -41,9 +41,15 @@
   align-content: stretch;
   width: 90%;
 }
+
+@media ( min-width:600px) {
+  .review-item-long, .review-item {
+    width: 50%;
+  }
+  }
 @media ( min-width:1000px) {
   .review-item-long, .review-item {
-    width: 30%;
+    width: 25%;
   }
   }
 
@@ -54,7 +60,7 @@
 }
 
 .review-picture{
-  width: 5em;
+  width: 3em;
   height: auto;
   align-self: center;
   margin-right: 1em;
@@ -104,7 +110,7 @@
 }
 
 .review-stars ul li i {
-  color: #ca0d00;
+  color: #E69225;
   /* Google's Star Orange in Nov 2017 */
   font-size: 1em;
   font-style: normal;
@@ -138,11 +144,14 @@
 .more-reviews a,
 .write-review a {
   margin: 5px;
-  border: 1px #ca0d00 solid;
-  border-radius: 40px;
+  border: none;
+  border-radius: 0px;
   padding: 10px;
-  background-color: #ca0d00;
+  background-color: #E69225;
   color: #FFF;
   text-decoration: none;
 }
-
+.more-reviews a:hover,
+.write-review a:hover {
+  background-color: #6A808E
+}
