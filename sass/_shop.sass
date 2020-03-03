@@ -10,7 +10,7 @@
 
 .orderby, select
 	@include txt-thin
-	width: 400px
+	width: 100%
 	font-size: 1.1em
 	padding: 10px 8px 10px 14px
 	background: $light
@@ -29,7 +29,7 @@
 	background-size: 1.5em
 	background-repeat: no-repeat
 
-@media only screen and (max-width: 600px)
+@media only screen and (min-width: 600px)
 	.orderby, select
 		width: 50%
 	label
@@ -50,4 +50,9 @@ label
 
 ul.products
 	width: 100%
+
+// style buttons
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt
+	color: $green	
 

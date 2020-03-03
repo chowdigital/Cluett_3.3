@@ -367,7 +367,7 @@ input[type="submit"]:hover {
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 100;
   font-style: normal;
-  width: 400px;
+  width: 100%;
   font-size: 1.1em;
   padding: 10px 8px 10px 14px;
   background: #D6D6D6;
@@ -386,7 +386,7 @@ input[type="submit"]:hover {
   background-size: 1.5em;
   background-repeat: no-repeat; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   .orderby, select {
     width: 50%; }
 
@@ -406,5 +406,49 @@ label {
 
 ul.products {
   width: 100%; }
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  color: #042C24; }
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+  background: #042C24 !important;
+  background-color: #042C24 !important;
+  color: #fff !important;
+  text-shadow: transparent !important;
+  box-shadow: none !important;
+  border-color: #131920 !important;
+  border-radius: 0px !important; }
+
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
+  background: #042C24 !important;
+  background-color: #042C24 !important;
+  color: #fff !important;
+  text-shadow: transparent !important;
+  box-shadow: none !important;
+  border-color: #131920 !important;
+  border-radius: 0px !important; }
+
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+  background: #042C24 !important;
+  color: #fff !important;
+  text-shadow: transparent !important;
+  border-color: #131920 !important;
+  border-radius: 0px !important; }
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+  background: #042C24 !important;
+  box-shadow: none !important;
+  text-shadow: transparent !important;
+  color: #fff !important;
+  border-color: #131920 !important;
+  border-radius: 0px !important; }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #131920 !important; }
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: #E69225;
+  border-radius: 0px;
+  font-weight: 300; }
 
 /*# sourceMappingURL=cluett.css.map */
