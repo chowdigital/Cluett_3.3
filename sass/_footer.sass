@@ -1,0 +1,58 @@
+.site-info-column 
+	a:link, a:visited
+		color: $light
+	a:hover, a:active
+		color: $yellow
+
+//.site-info-column a, .site-info-column a:visited, .site-title a, .site-title a:visited
+//	color: $light
+
+//.site-info-column:hover  a, .site-info-column a:active , .site-title a:hover , .site-title a:active 
+//	color: $grey
+
+.site-footer
+	background-color: $dark
+	position: relative
+	bottom: 0px
+	padding: 2em 2em
+	.site-branding
+		width: 100%
+
+.site-info a
+	font-size: 0.8em
+
+.contact-form h3
+	margin: 0
+
+.site-info-column, .site-info-column a
+	display: table
+
+.social-links 
+	padding: 0em
+	text-align: center
+	a img
+		width: 2em
+		height: auto
+
+
+@media only screen and (min-width: $break_sml)
+	.footer-flex, .site-info-wrap
+		@include flexbox
+
+
+	.site-info
+		flex-basis: 60%
+	
+	
+	.site-info-wrap
+		justify-content: space-between
+		flex-grow: 1
+
+	.break
+		flex-basis: 10%
+		height: 100%
+
+	.contact-form
+		order: 1
+
+	

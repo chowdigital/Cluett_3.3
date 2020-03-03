@@ -1,0 +1,53 @@
+.site-main
+	padding: 2em
+
+.woocommerce-breadcrumb a:link
+	color: $yellow
+
+.product__link 
+	color: $dark
+
+
+.orderby, select
+	@include txt-thin
+	width: 400px
+	font-size: 1.1em
+	padding: 10px 8px 10px 14px
+	background: $light
+	border: 2px solid $blue
+	border-radius: 0px
+	position: relative
+	display: inline-block
+	margin: 0    
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-appearance: none
+	-moz-appearance: none
+	background-image: url('../img/arrow.svg')
+	background-position: right 10px top 10px
+	background-size: 1.5em
+	background-repeat: no-repeat
+
+@media only screen and (max-width: 600px)
+	.orderby, select
+		width: 50%
+	label
+		width: 50%
+
+
+
+.orderby
+	margin: 1em 0em
+
+
+.reset_variations
+	padding: 1em 1em
+	color: $yellow
+
+label
+	@include txt-bold
+
+ul.products
+	width: 100%
+

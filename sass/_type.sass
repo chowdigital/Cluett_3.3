@@ -1,0 +1,67 @@
+@mixin txt-thin
+	TitlingGothicFB Normal Thin
+	font-family: titling-gothic-fb, sans-serif
+	font-weight: 100
+	font-style: normal
+
+
+@mixin txt-light
+	TitlingGothicFB Normal Light
+	font-family: titling-gothic-fb, sans-serif
+	font-weight: 200
+	font-style: normal
+
+
+@mixin txt-bold
+	TitlingGothicFB Normal Bold
+	font-family: titling-gothic-fb, sans-serif
+	font-weight: 700
+	font-style: normal
+
+
+@mixin txt-black
+	TitlingGothicFB Normal Black
+	font-family: titling-gothic-fb, sans-serif
+	font-weight: 800
+	font-style: normal
+
+
+h1 
+	@include txt-black
+	letter-spacing: 0.1em
+	font-size: 3em
+
+h2, h3
+	@include txt-thin
+	text-transform: uppercase
+
+h2
+	font-size: 3em
+
+h3
+	font-size: 2em
+
+p
+	@include txt-light
+
+ul, li, a, input
+	@include txt-light
+	letter-spacing: 0.1em
+	text-decoration: none
+	margin
+
+
+a:link
+	color: $dark
+
+a:visited 
+	color: $dark
+
+a:hover 
+	color: $yellow
+
+a:active 
+	color: $yellow
+
+.light-text
+	color: $white
