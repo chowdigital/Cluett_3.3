@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'cluett_3_3_widgets_init' );
 function cluett_3_3_scripts() {
 	wp_enqueue_style( 'cluett-3-3-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'cluett-style', get_template_directory_uri() . '/css/cluett.min.css?v=1.0', array(), '1.0', 'all' );
+	wp_enqueue_style( 'cluett-style', get_template_directory_uri() . '/css/cluett.css?v=1.0', array(), '1.0', 'all' );
 
 	wp_enqueue_style( 'typekit', 'https://use.typekit.net/ivs4wxb.css', array(), '1.0', 'all' );
 
