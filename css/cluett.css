@@ -293,6 +293,10 @@ section {
 
   .contact-form {
     order: 1; } }
+.google-reviews-class {
+  width: 100%;
+  padding: 1em; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -453,5 +457,31 @@ ul.products {
   background-color: #E69225;
   border-radius: 0px;
   font-weight: 300; }
+
+.the-loop {
+  width: 100%; }
+
+.blog-link {
+  width: 100%;
+  margin-bottom: 2em; }
+
+.blog-img {
+  width: 100%; }
+
+.blog-text {
+  width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  .blog-link {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+
+  .blog-img {
+    width: 30%; }
+
+  .blog-text {
+    width: 70%;
+    margin-left: 2em; } }
 
 /*# sourceMappingURL=cluett.css.map */

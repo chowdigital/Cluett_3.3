@@ -10,7 +10,8 @@
  */
 
 ?>
-		 <div id="google-reviews"></div>
+		 
+		 <div class="google-reviews-class" id="google-reviews"></div>
 		 <script>
 jQuery(document).ready(function($) {
    $("#google-reviews").googlePlaces({
