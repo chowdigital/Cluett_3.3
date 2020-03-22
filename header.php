@@ -27,9 +27,17 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 		
-				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/cluettlogo.svg"/>
-					<?php bloginfo( 'name' ); ?></a></div>
+				<div class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<div class="penrose">
+  						  <span></span>
+						  <span></span>
+						  <span></span>
+					</div>
+					<div class="titleText">
+					<?php bloginfo( 'name' ); ?></div>
+				</a>
+			</div>
 				
 		
 		</div><!-- .site-branding -->

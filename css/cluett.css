@@ -97,7 +97,7 @@ section {
   padding: 2em; }
 
 .big-btn {
-  background-color: #042C24;
+  background-color: #154043;
   color: #fff;
   border: none;
   padding: 0.5em;
@@ -115,7 +115,7 @@ section {
   border-radius: 0px; }
 
 .intro-box {
-  background-color: #042C24;
+  background-color: #154043;
   color: #fff; }
 
 .page-content, .entry-content, .entry-summary {
@@ -153,7 +153,7 @@ section {
     position: fixed;
     z-index: 4;
     height: 58px;
-    background-color: #042C24; }
+    background-color: #154043; }
     .main-navigation li {
       width: 100%;
       height: 1.5em;
@@ -167,7 +167,7 @@ section {
     position: fixed;
     right: 0;
     height: 100vh;
-    background: #042C24;
+    background: #154043;
     top: 0;
     padding-top: 50px;
     width: 100%; }
@@ -234,7 +234,7 @@ section {
 @media only screen and (min-width: 600px) {
   #masthead {
     padding: 1em 2em;
-    background-color: #042C24;
+    background-color: #154043;
     width: 100%;
     display: inline;
     display: flex; }
@@ -273,6 +273,45 @@ section {
     height: 2em;
     margin-bottom: -0.5em; }
 
+.titleText {
+  position: relative;
+  left: 60px;
+  top: -13px; }
+
+.penrose {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  color: blue;
+  top: 3px;
+  left: 3px;
+  color: blue;
+  animation: rotating 10s linear infinite;
+  transform-origin: 66% 66%; }
+  .penrose span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    clip-path: polygon(57% 0, 75% 0, 26% 85%, 89.5% 85%, 98.4% 100%, 0 100%); }
+    .penrose span:nth-child(1) {
+      transform: rotate(0deg);
+      filter: brightness(1); }
+    .penrose span:nth-child(2) {
+      transform: rotate(120deg);
+      filter: brightness(0.66);
+      top: 18.3%;
+      left: 43.3%; }
+    .penrose span:nth-child(3) {
+      transform: rotate(240deg);
+      filter: brightness(0.33);
+      top: 46.5%;
+      left: 5.9%; }
+
+@keyframes rotating {
+  to {
+    transform: rotate(2turn);
+    filter: hue-rotate(-360deg); } }
 .site-info-column a:link, .site-info-column a:visited {
   color: #D6D6D6; }
 .site-info-column a:hover, .site-info-column a:active {
@@ -363,7 +402,7 @@ section {
   border: 2px solid #154043;
   color: #131920; }
 .entry-content button, .entry-content input[type="button"], .entry-content input[type="reset"], .entry-content input[type="submit"], .comments-area button, .comments-area input[type="button"], .comments-area input[type="reset"], .comments-area input[type="submit"] {
-  background-color: #042C24;
+  background-color: #154043;
   border: none;
   padding: 0.5em;
   margin-bottom: 0.5em;
@@ -431,11 +470,11 @@ ul.products {
   width: 100%; }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  color: #042C24; }
+  color: #154043; }
 
 .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
-  background: #042C24 !important;
-  background-color: #042C24 !important;
+  background: #154043 !important;
+  background-color: #154043 !important;
   color: #fff !important;
   text-shadow: transparent !important;
   box-shadow: none !important;
@@ -443,8 +482,8 @@ ul.products {
   border-radius: 0px !important; }
 
 .woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
-  background: #042C24 !important;
-  background-color: #042C24 !important;
+  background: #154043 !important;
+  background-color: #154043 !important;
   color: #fff !important;
   text-shadow: transparent !important;
   box-shadow: none !important;
@@ -452,14 +491,14 @@ ul.products {
   border-radius: 0px !important; }
 
 .woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
-  background: #042C24 !important;
+  background: #154043 !important;
   color: #fff !important;
   text-shadow: transparent !important;
   border-color: #131920 !important;
   border-radius: 0px !important; }
 
 .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
-  background: #042C24 !important;
+  background: #154043 !important;
   box-shadow: none !important;
   text-shadow: transparent !important;
   color: #fff !important;
