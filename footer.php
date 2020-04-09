@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 </script>
 
 	</div><!-- #content -->
-
+	<div class="wavyline"><img id="boat" src="boat.png" alt=""></div>
 	<footer id="colophon" class="site-footer">
 		
 		<div class="footer-flex">

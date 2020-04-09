@@ -1,0 +1,54 @@
+#boat
+  width: 400px
+  top: 0px
+  z-index: 98
+  position: relative
+  z-index: -100
+  transform: translateX(-200px)
+  animation: boat 22s linear 1s infinite
+
+.wavyline
+  overflow: hidden
+  z-index: 99
+  background: url("wave.svg")
+  background-repeat: repeat
+  background-position-x: 0%
+  background-position-y: 0%
+  background-size: auto auto
+  background-repeat: repeat-x
+  background-size: 120px 60px
+  animation: move 3s linear infinite
+  -webkit-animation: move 3s linear infinite
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+  animation-play-state: running
+  height: 140px
+  width: 100%
+
+@keyframes boat
+  0%
+    transform: translateX(-400px)
+
+  100%
+    transform: translateX(calc(100vw + 0px))
+
+@-webkit-keyframes boat
+  0%
+    transform: translate(-400px, 0px)
+
+  100%
+    transform: translate(1680px, 0px)
+
+@-webkit-keyframes move
+  from
+    background-position: 120px 80px
+
+  to
+    background-position: 0px 80px
+
+@keyframes move
+  from
+    background-position: 120px 80px
+
+  to
+    background-position: 0px 80px
