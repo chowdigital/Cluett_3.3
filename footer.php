@@ -10,7 +10,7 @@
  */
 
 ?>
-		 
+		 <div class="boat-background">
 		 <div class="google-reviews-class" id="google-reviews"></div>
 		 <script>
 jQuery(document).ready(function($) {
@@ -22,9 +22,10 @@ jQuery(document).ready(function($) {
 
 });
 </script>
-
+<div id="contact-link" class="wavyline"><img id="boat" src="<?php echo get_template_directory_uri(); ?>/img/BOAT5.svg" alt=""></div>
+</div>
 	</div><!-- #content -->
-	<div class="wavyline"><img id="boat" src="boat.png" alt=""></div>
+	
 	<footer id="colophon" class="site-footer">
 		
 		<div class="footer-flex">
@@ -43,27 +44,23 @@ jQuery(document).ready(function($) {
 						<?php bloginfo( 'name' ); ?>
 					</a>
 				</div>
+				
 				<div class="site-info-wrap">
 				<div class="site-info-column">
-					<h5>Title A</h5>
-					<a href="link">title A</a>
-					<a href="link">title A</a>
-					<a href="link">title A</a>
+					<p>16, 17 Argall Ave, Walthamstow, London E10 7QE
+					<a href="tel:02081681168"><i class="fas fa-phone"></i> 020 8168 1168</a>
+					<a href="mailto:cluettcarpentry@gmail.com">cluettcarpentry@gmail.com</a>
+					<p>
+
+					<p>
+					<a href="#">Privacy Policy</a>
+					</p>
 				</div>
-				<div class="site-info-column">
-					<h5>Title B</h5>
-					<a href="link">title B</a>
-					<a href="link">title B</a>
-					<a href="link">title B</a>
+		
+				
 				</div>
 
-				<div class="site-info-column">
-					<h5>Title C</h5>
-					<a href="link">title C</a>
-					<a href="link">title C</a>
-					<a href="link">title C</a>
-				</div>
-				</div>
+
 
 			</div><!-- .site-info -->
 
@@ -71,6 +68,7 @@ jQuery(document).ready(function($) {
 
 		</div><!-- footer-flex-->
 		<div class="social-links">
+
 		<a href="https://en-gb.facebook.com/cluettcarpentry">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg"/>
 		</a>

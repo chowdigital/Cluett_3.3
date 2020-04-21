@@ -13,13 +13,23 @@
 		width: 100%
 
 .site-info a
-	font-size: 0.8em
+	font-size: 1em
+
+.site-contact
+	p 
+		color: $light
+		a
+			line-height: 1.8
+			color: $light
+			font-size: 1em
 
 .contact-form h3
 	margin: 0
 
-.site-info-column, .site-info-column a
+.site-info-column, .site-info-column a, .site-info-column p
 	display: table
+	color: $light
+	line-height: 1.8
 
 .social-links 
 	padding: 0em
@@ -49,7 +59,36 @@
 	.contact-form
 		order: 1
 
+#google-reviews h2
+	text-align: center
+	color: $white
+	padding-top: 2em
+	@include txt-bold
+
 .google-reviews-class
 	width: 100%
 	padding: 1em
+	background-color: $skyblue
+	background-image: url('../img/CLOUDS.svg')
+	background-repeat: repeat-x
+	background-size: 400px 225px
+	z-index: 1
+	position: relative
+	background-position: top
+	background-position-x: 0%
+	background-position-y: -70px
+
+.review-text
+	line-height: 1.2em
+	font-size: 0.8em
+	color: $white
+
+.review-stars 
+	color: #fecd8f
+
+.boat-background
+	background-color: $skyblue
+	position: relative
+	z-index: 1
 	
+

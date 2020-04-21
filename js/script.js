@@ -144,7 +144,7 @@ $( function() {
 
   var settings = { 
     anchors: 'a',
-    blacklist: '.wp-link, figure a, input, .submit',
+    blacklist: '.wp-link, figure a, input, .submit, #contact-link',
     onStart: {
       duration: 280,
       render: function ( $container ) {
