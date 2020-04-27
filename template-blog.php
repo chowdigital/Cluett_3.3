@@ -1,4 +1,4 @@
-<?php /* Template Name: Projects */ get_header(); ?>
+<?php /* Template Name: Blog */ get_header(); ?>
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		
@@ -23,7 +23,7 @@
 		<div class="the-loop">
 		<?php
 // The Query
-		$the_query = new WP_Query( 'cat=17&posts_per_page=24' );
+		$the_query = new WP_Query( 'cat=19&posts_per_page=24' );
 //posts_per_page=5'
 
 // The Loop
