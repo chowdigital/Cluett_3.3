@@ -11,6 +11,10 @@
 
 .blog-img 
 	width: 100%
+	padding-bottom: 100%
+	border-radius: 50%
+	background-repeat: no-repeat
+	background-size: cover
 
 .blog-text
 	width: 100%
@@ -20,30 +24,26 @@
 
 
 @media only screen and (min-width: $break_sml)
-
 	.blog-link
-		width: 100%
 		display: flex
 		align-items: center
 
 	.blog-img 
+		width: 40%
+		padding-bottom: 40%
+
+
+	.blog-text
+		width: 60%
+		padding-left: 2em
+
+@media only screen and (min-width: $break_lg)
+
+	.blog-img 
 		width: 30%
+		padding-bottom: 30%
+
 
 	.blog-text
 		width: 70%
-		margin-left: 2em
-
-	.post-thumbnail
-		width: 100%
-
-	#primary
-		padding: 4em 4em
-
-	.wp-block-image .alignleft
-		margin-bottom: 2em
-		margin-right: 3em
-	
-	.wp-block-image .alignright
-		margin-left: 2em
-		margin-bottom: 3em
-
+		padding-left: 2em
