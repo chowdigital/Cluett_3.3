@@ -23,7 +23,7 @@
 		<div class="the-loop">
 		<?php
 // The Query
-		$the_query = new WP_Query( 'cat=17&posts_per_page=24' );
+		$the_query = new WP_Query( 'posts_per_page=24' );
 //posts_per_page=5'
 
 // The Loop
@@ -46,13 +46,13 @@
 							<a href="<?php the_permalink(); ?>" class="">
 								
 								
-								<div class="bottom" id="<?php echo $category[0]->slug;?>">
+								<!--<div class="bottom" id="<?php echo $category[0]->slug;?>">
 									<h4><?php print get_the_category(get_the_ID())[0]->name; ?></h4>
-								</div>
+								</div>-->
 								<div class="title"><h3><?php the_title(); ?></h3></div>
 
 							</a>
-							<?php the_excerpt(); ?>
+							<!--<?php the_excerpt(); ?>-->
 					</div>
 				</div>
 				
