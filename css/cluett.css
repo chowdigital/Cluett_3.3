@@ -58,11 +58,12 @@ html {
   object-fit: cover; }
 
 .catagoryPic {
-  width: 300px;
-  height: 500px; }
-
-section {
-  padding: 4em 6em; }
+  width: 90%;
+  margin: 0% 5%;
+  padding-bottom: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .mainCat {
   overflow: auto; }
@@ -72,17 +73,19 @@ section {
 .contentBox {
   text-align: center; }
 
-.catagoryPic {
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
 @media only screen and (min-width: 1000px) {
+  .catagoryPic {
+    width: 100%;
+    margin: 0%;
+    padding-bottom: 100%; }
+
+  .mainCat {
+    display: flex;
+    justify-content: space-around; }
+
   .contentBox {
-    width: 50%;
+    width: 30%;
     height: auto;
-    float: left;
     padding: 0em 2em; }
 
   .ourWork {
@@ -94,7 +97,7 @@ section {
   background-color: #fff; }
 
 .entry-header, .entry-content {
-  padding: 0em 2em; }
+  padding: 0em 1em; }
 
 @media only screen and (min-width: 1000px) {
   .entry-header {
@@ -121,11 +124,11 @@ section {
   border-radius: 0px; }
 
 .intro-box {
-  background-color: #74C1EC;
-  color: #fff; }
+  background-color: #fff;
+  color: #0c2b59; }
 
 .page-content, .entry-content, .entry-summary {
-  margin: 4em; }
+  margin: 2em; }
 
 .menu-item a, .menu-item a:visited, .site-title a, .site-title a:visited {
   color: #0c2b59; }
@@ -240,7 +243,7 @@ section {
 @media only screen and (min-width: 600px) {
   #masthead {
     padding: 1em 2em;
-    background-color: #74C1EC;
+    background-color: #ace0fc;
     width: 100%;
     display: inline;
     display: flex; }

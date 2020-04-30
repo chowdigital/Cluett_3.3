@@ -14,10 +14,7 @@
 <div class="heroImage" style="background-image:url('<?php the_post_thumbnail_url(); ?>');"></div>
 
 <div class="intro-box">	
-
-
-
-	<div class="entry-content">
+<div class="entry-content">
 		<?php
 		the_content();
 
@@ -27,39 +24,38 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
 </div>	
 		<section class="mainCat">
 			<div class="contentBox">
-				<a href="shop">
+				<a href="gallery">
 				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_1_img'); ?>');">
 				</div>
-				<h2><?php the_field('cat_1'); ?></h2>
+				<h3><?php the_field('cat_1'); ?></h3>
 			</a>
-				<p><?php the_field('cat_1_copy'); ?></p>
 
 			</div>
 			<div class="contentBox">
-				<a href="shop">
+				<a href="projects">
 				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_2_img'); ?>');">
 				</div>
-				<h2><?php the_field('cat_2'); ?></h2>
+				<h3><?php the_field('cat_2'); ?></h3>
 				</a>
-				<p><?php the_field('cat_2_copy'); ?></p>
 
 			</div>
 			<div class="contentBox">
-				<a href="shop">
-				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_2_img'); ?>');">
+				<a href="D-I-Y">
+				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_3_img'); ?>');">
 				</div>
-				<h2><?php the_field('cat_3'); ?></h2>
+				<h3><?php the_field('cat_3'); ?></h3>
 				</a>
-				<p><?php the_field('cat_3_copy'); ?></p>
 
 			</div>
 
 
 		</section>
 
+	
 	
 
 
