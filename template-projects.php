@@ -23,7 +23,7 @@
 		<div class="the-loop">
 		<?php
 // The Query
-		$the_query = new WP_Query( 'posts_per_page=24' );
+		$the_query = new WP_Query( 'cat=17&posts_per_page=24' );
 //'cat=17&posts_per_page=24'
 
 

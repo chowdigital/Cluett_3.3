@@ -1,58 +1,29 @@
-
-<?php /* Template Name: Form */ get_header(); ?>
+<?php /* Template Name: Gallery */ get_header(); ?>
 
 
 <div id="content" class="site-content scene_element scene_element--fadein">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-	<div class="no-smoothState">
-	 <form id="regForm" action="">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main">
+    <?php
+    while ( have_posts() ) :
+      the_post();
 
-<h1>Register:</h1>
+      get_template_part( 'template-parts/content', 'page' );
 
-<!-- One "tab" for each step in the form: -->
-<div class="tab">Name:
-  <p><input placeholder="First name..." oninput="this.className = ''"></p>
-  <p><input placeholder="Last name..." oninput="this.className = ''"></p>
-</div>
+      // If comments are open or we have at least one comment, load up the comment template.
+      if ( comments_open() || get_comments_number() ) :
+        comments_template();
+      endif;
 
-<div class="tab">Contact Info:
-  <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-  <p><input placeholder="Phone..." oninput="this.className = ''"></p>
-</div>
+    endwhile; // End of the loop.
+    ?>
 
-<div class="tab">Birthday:
-  <p><input placeholder="dd" oninput="this.className = ''"></p>
-  <p><input placeholder="mm" oninput="this.className = ''"></p>
-  <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-</div>
-
-<div class="tab">Login Info:
-  <p><input placeholder="Username..." oninput="this.className = ''"></p>
-  <p><input placeholder="Password..." oninput="this.className = ''"></p>
-</div>
-
-<div style="overflow:auto;">
-  <div style="float:right;">
-    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-  </div>
-</div>
-
-<!-- Circles which indicates the steps of the form: -->
-<div style="text-align:center;margin-top:40px;">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
-
-</form> 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
 
 
 <?php get_footer(); ?>
+

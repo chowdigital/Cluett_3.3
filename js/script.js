@@ -7,6 +7,15 @@
   });
   // START :  Do Things
   function dothings() {
+    // New PAge on sucessful form completion
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  // For the form at https://www.framefreakstudio.com/application/
+  if ( 78 === event.detail.contactFormId ) {
+    location = 'https://www.framefreakstudio.com/thanks-app/';
+  }
+}, false );
+
     // START : Navigation
       $(function togglemenu() {
          var container, button, menu, links, i, len;

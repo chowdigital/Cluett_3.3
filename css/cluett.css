@@ -96,6 +96,12 @@ section {
 .entry-header, .entry-content {
   padding: 0em 2em; }
 
+@media only screen and (min-width: 1000px) {
+  .entry-header {
+    padding: 0em 2em; } }
+@media only screen and (min-width: 1200px) {
+  .entry-header {
+    padding: 0em 4em; } }
 .big-btn {
   background-color: #1fc0bf;
   color: #fff;
@@ -332,13 +338,15 @@ section {
 
   .contact-form {
     order: 1; } }
-#google-reviews h2 {
-  text-align: center;
-  color: #fff;
-  padding-top: 2em;
-  font-family: titling-gothic-fb, sans-serif;
-  font-weight: 600;
-  font-style: normal; }
+#google-reviews {
+  min-height: 200px; }
+  #google-reviews h2 {
+    text-align: center;
+    color: #fff;
+    padding-top: 2em;
+    font-family: titling-gothic-fb, sans-serif;
+    font-weight: 600;
+    font-style: normal; }
 
 .google-reviews-class {
   width: 100%;
@@ -540,7 +548,8 @@ ul.products {
 @media only screen and (min-width: 600px) {
   .blog-link {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0em 3em; }
 
   .blog-img {
     width: 40%;
@@ -550,6 +559,9 @@ ul.products {
     width: 60%;
     padding-left: 2em; } }
 @media only screen and (min-width: 1200px) {
+  .blog-link {
+    padding: 0em 6em; }
+
   .blog-img {
     width: 30%;
     padding-bottom: 30%; }

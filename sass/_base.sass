@@ -6,10 +6,6 @@ html
 	scroll-behavior: smooth
 
 
-.site-content
-
-
-
 .heroImage
 	top: 0
 	height: 100vh
@@ -60,7 +56,14 @@ section
 .entry-header, .entry-content
 	padding: 0em 2em
 
+@media only screen and (min-width: $break_med)
+	.entry-header
+		padding: 0em 2em
 
+@media only screen and (min-width: $break_lg)
+	.entry-header
+		padding: 0em 4em
+		
 .big-btn
 	background-color: $blue
 	color: $white

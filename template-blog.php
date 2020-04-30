@@ -26,6 +26,7 @@
 		$the_query = new WP_Query( 'cat=19&posts_per_page=24' );
 //posts_per_page=5'
 
+
 // The Loop
 		if ( $the_query->have_posts() ) {
 			while ( $the_query->have_posts() ) {
@@ -36,23 +37,28 @@
 
 
 				<div class="<?php echo $category[0]->slug;?> blog-link">
-					<div class="blog-img">
+					<div class="blog-img" style="background-image:url(<?php the_post_thumbnail_url(); ?>)">
+				
+<!--
 						<a href="<?php the_permalink(); ?>" class="">
 							<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
 						</a>
+
+-->
 					</div>
 				
 					<div class="blog-text">
 							<a href="<?php the_permalink(); ?>" class="">
 								
 								
-								<div class="bottom" id="<?php echo $category[0]->slug;?>">
+								<!--<div class="bottom" id="<?php echo $category[0]->slug;?>">
 									<h4><?php print get_the_category(get_the_ID())[0]->name; ?></h4>
-								</div>
+								</div>-->
 								<div class="title"><h3><?php the_title(); ?></h3></div>
 
 							</a>
-							<?php the_excerpt(); ?>
+							<!--<?php the_excerpt(); ?>-->
+
 					</div>
 				</div>
 				
