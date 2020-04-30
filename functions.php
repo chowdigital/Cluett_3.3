@@ -178,14 +178,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function cf7_footer_script(){ ?>
-  
-<script>
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-    location = 'http://cluettcarpentry.com/thank-you';
-}, false );
-</script>
-  
-<?php } 
+/**
+ * Redirect after contct form submission to Thank you Page
+ */
+function cf7_footer_script(){ 
+	if ( is_page('contact-form')) { 
+		?>
+		<script>
+			document.addEventListener( 'wpcf7mailsent', function( event ) {
+				location = 'http://cluettcarpentry.com/thank-you';
+			}, false );
+		</script>
+		<?php 
+	}
+} 
   
 add_action('wp_footer', 'cf7_footer_script'); 

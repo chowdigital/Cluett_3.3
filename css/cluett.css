@@ -28,10 +28,10 @@ ul, li, a, input {
   text-decoration: none; }
 
 a:link {
-  color: #104799; }
+  color: #0c2b59; }
 
 a:visited {
-  color: #104799; }
+  color: #0c2b59; }
 
 a:hover {
   color: #fecd8f; }
@@ -128,7 +128,7 @@ section {
   margin: 4em; }
 
 .menu-item a, .menu-item a:visited, .site-title a, .site-title a:visited {
-  color: #fff; }
+  color: #0c2b59; }
 
 .menu-item:hover a, .menu-item a:active, .site-title a:hover, .site-title a:active {
   color: #66838f; }
@@ -285,7 +285,7 @@ section {
   color: #fecd8f; }
 
 .site-footer {
-  background-color: #104799;
+  background-color: #0c2b59;
   position: relative;
   bottom: 0px;
   padding: 2em 2em; }
@@ -342,7 +342,7 @@ section {
   min-height: 200px; }
   #google-reviews h2 {
     text-align: center;
-    color: #fff;
+    color: #0c2b59;
     padding-top: 2em;
     font-family: titling-gothic-fb, sans-serif;
     font-weight: 600;
@@ -351,7 +351,7 @@ section {
 .google-reviews-class {
   width: 100%;
   padding: 1em;
-  background-color: #74C1EC;
+  background-color: #ace0fc;
   background-image: url("../img/CLOUDS.svg");
   background-repeat: repeat-x;
   background-size: 400px 225px;
@@ -364,15 +364,18 @@ section {
 .review-text {
   line-height: 1.2em;
   font-size: 0.8em;
-  color: #fff; }
+  color: #0c2b59; }
 
-.review-stars {
-  color: #fecd8f; }
+.review-stars ul li i {
+  color: #d193da; }
 
 .boat-background {
-  background-color: #74C1EC;
+  background-color: #ace0fc;
   position: relative;
   z-index: 1; }
+
+.post-navigation {
+  display: none; }
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="url"], .contact-form input[type="password"], .contact-form input[type="search"], .contact-form input[type="number"], .contact-form input[type="tel"], .contact-form input[type="range"], .contact-form input[type="date"], .contact-form input[type="month"], .contact-form input[type="week"], .contact-form input[type="time"], .contact-form input[type="datetime"], .contact-form input[type="datetime-local"], .contact-form input[type="color"], .contact-form textarea {
   color: #66838f;
@@ -408,7 +411,7 @@ section {
   margin-bottom: 0.5em; }
 .entry-content input[type="text"]:focus, .entry-content input[type="email"]:focus, .entry-content input[type="url"]:focus, .entry-content input[type="password"]:focus, .entry-content input[type="search"]:focus, .entry-content input[type="number"]:focus, .entry-content input[type="tel"]:focus, .entry-content input[type="range"]:focus, .entry-content input[type="date"]:focus, .entry-content input[type="month"]:focus, .entry-content input[type="week"]:focus, .entry-content input[type="time"]:focus, .entry-content input[type="datetime"]:focus, .entry-content input[type="datetime-local"]:focus, .entry-content input[type="color"]:focus, .entry-content textarea:focus, .comments-area input[type="text"]:focus, .comments-area input[type="email"]:focus, .comments-area input[type="url"]:focus, .comments-area input[type="password"]:focus, .comments-area input[type="search"]:focus, .comments-area input[type="number"]:focus, .comments-area input[type="tel"]:focus, .comments-area input[type="range"]:focus, .comments-area input[type="date"]:focus, .comments-area input[type="month"]:focus, .comments-area input[type="week"]:focus, .comments-area input[type="time"]:focus, .comments-area input[type="datetime"]:focus, .comments-area input[type="datetime-local"]:focus, .comments-area input[type="color"]:focus, .comments-area textarea:focus {
   border: 2px solid #1fc0bf;
-  color: #104799; }
+  color: #0c2b59; }
 .entry-content button, .entry-content input[type="button"], .entry-content input[type="reset"], .entry-content input[type="submit"], .comments-area button, .comments-area input[type="button"], .comments-area input[type="reset"], .comments-area input[type="submit"] {
   background-color: #74C1EC;
   border: none;
@@ -431,7 +434,7 @@ section {
   color: #fecd8f; }
 
 .product__link {
-  color: #104799; }
+  color: #0c2b59; }
 
 .orderby, select {
   font-family: titling-gothic-fb, sans-serif;
@@ -486,7 +489,7 @@ ul.products {
   color: #fff !important;
   text-shadow: transparent !important;
   box-shadow: none !important;
-  border-color: #104799 !important;
+  border-color: #0c2b59 !important;
   border-radius: 0px !important; }
 
 .woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
@@ -495,14 +498,14 @@ ul.products {
   color: #fff !important;
   text-shadow: transparent !important;
   box-shadow: none !important;
-  border-color: #104799 !important;
+  border-color: #0c2b59 !important;
   border-radius: 0px !important; }
 
 .woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
   background: #74C1EC !important;
   color: #fff !important;
   text-shadow: transparent !important;
-  border-color: #104799 !important;
+  border-color: #0c2b59 !important;
   border-radius: 0px !important; }
 
 .woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
@@ -510,11 +513,11 @@ ul.products {
   box-shadow: none !important;
   text-shadow: transparent !important;
   color: #fff !important;
-  border-color: #104799 !important;
+  border-color: #0c2b59 !important;
   border-radius: 0px !important; }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-  color: #104799 !important; }
+  color: #0c2b59 !important; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
   background-color: #fecd8f;
@@ -586,7 +589,7 @@ ul.products {
 .wavyline {
   overflow: hidden;
   z-index: 99;
-  background-color: #74C1EC;
+  background-color: #ace0fc;
   background-image: url("../img/wave.svg");
   background-repeat: repeat;
   background-position-x: 0%;
