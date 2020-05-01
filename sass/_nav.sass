@@ -11,12 +11,14 @@
 		width: 100%
 		text-align: center
 
-
+#masthead
+	z-index: 9999
 
 @media only screen and (max-width: $break_sml)
 	#masthead
 		display: flex
 		padding: 0em 0em
+		position: fixed
 
 	.site-branding
 		width: 80%
@@ -127,14 +129,31 @@
 			-o-transform: rotate(-135deg)
 			transform: rotate(-135deg)
 
+	.site-branding
+		width: 70%
+		float: left
+		display: block
+		z-index: 5
+	
+	#logo-text
+		display: none
+	
+	#logo-img
+		width: auto
+		height: 48px
+		margin-left: 5px
+		margin-top: 5px
+		z-index: 5
+
 @media only screen and (min-width: 600px)
 
 	#masthead
-		padding: 1em 2em
+		height: 100px
 		background-color: $skyblue
 		width: 100%
 		display: inline
 		display: flex
+		position: fixed
 
 	.site-branding
 		width: 40%
@@ -163,17 +182,27 @@
 
 	.menu-item-59 a:hover
 		opacity: 0.7
-
-
-
-	
-
-
-.site-title a 	
-	@include txt-bold
-	img 
+		
+		
+	#logo-img
 		width: auto
-		height: 2em
-		margin-bottom: -0.5em
+		height: 80px
+		margin-left: 2em
+		margin-top: 10px
+
+	#logo-text
+		font-size: 30px
+		line-height: 30px
+		margin-top: 20px
+		margin-left: 20px
+		@include txt-bold
+
+	.titleText
+		float: left
+
+
+
+
+
 
 

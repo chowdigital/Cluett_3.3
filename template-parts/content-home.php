@@ -44,7 +44,7 @@
 
 			</div>
 			<div class="contentBox">
-				<a href="D-I-Y">
+				<a href="blog">
 				<div class="catagoryPic" style="background-image:url('<?php the_field('cat_3_img'); ?>');">
 				</div>
 				<h3><?php the_field('cat_3'); ?></h3>

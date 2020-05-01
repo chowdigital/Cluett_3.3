@@ -101,7 +101,8 @@ html {
 
 @media only screen and (min-width: 1000px) {
   .entry-header {
-    padding: 0em 2em; } }
+    padding: 0em 2em;
+    margin-top: 120px; } }
 @media only screen and (min-width: 1200px) {
   .entry-header {
     padding: 0em 4em; } }
@@ -142,10 +143,14 @@ html {
     width: 100%;
     text-align: center; }
 
+#masthead {
+  z-index: 9999; }
+
 @media only screen and (max-width: 600px) {
   #masthead {
     display: flex;
-    padding: 0em 0em; }
+    padding: 0em 0em;
+    position: fixed; }
 
   .site-branding {
     width: 80%; }
@@ -239,14 +244,31 @@ html {
       -webkit-transform: rotate(-135deg);
       -moz-transform: rotate(-135deg);
       -o-transform: rotate(-135deg);
-      transform: rotate(-135deg); } }
+      transform: rotate(-135deg); }
+
+  .site-branding {
+    width: 70%;
+    float: left;
+    display: block;
+    z-index: 5; }
+
+  #logo-text {
+    display: none; }
+
+  #logo-img {
+    width: auto;
+    height: 48px;
+    margin-left: 5px;
+    margin-top: 5px;
+    z-index: 5; } }
 @media only screen and (min-width: 600px) {
   #masthead {
-    padding: 1em 2em;
+    height: 100px;
     background-color: #ace0fc;
     width: 100%;
     display: inline;
-    display: flex; }
+    display: flex;
+    position: fixed; }
 
   .site-branding {
     width: 40%;
@@ -272,16 +294,25 @@ html {
     background-size: fit; }
 
   .menu-item-59 a:hover {
-    opacity: 0.7; } }
-.site-title a {
-  font-family: titling-gothic-fb, sans-serif;
-  font-weight: 600;
-  font-style: normal; }
-  .site-title a img {
-    width: auto;
-    height: 2em;
-    margin-bottom: -0.5em; }
+    opacity: 0.7; }
 
+  #logo-img {
+    width: auto;
+    height: 80px;
+    margin-left: 2em;
+    margin-top: 10px; }
+
+  #logo-text {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: titling-gothic-fb, sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+
+  .titleText {
+    float: left; } }
 .site-info-column a:link, .site-info-column a:visited {
   color: #fff; }
 .site-info-column a:hover, .site-info-column a:active {

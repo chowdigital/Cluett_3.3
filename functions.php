@@ -122,13 +122,13 @@ add_action( 'widgets_init', 'cluett_3_3_widgets_init' );
 function cluett_3_3_scripts() {
 	wp_enqueue_style( 'cluett-3-3-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'cluett-style', get_template_directory_uri() . '/css/cluett.css?v=1.4', array(), '1.0', 'all' );
+	wp_enqueue_style( 'cluett-style', get_template_directory_uri() . '/css/cluett.css?v=1.6', array(), '1.0', 'all' );
 
 	wp_enqueue_style( 'typekit', 'https://use.typekit.net/ivs4wxb.css', array(), '1.0', 'all' );
 
 	wp_enqueue_script( 'smootstate-js', 'https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js', array( 'jquery' ), '0.7.2' );
 	
-	wp_enqueue_script( 'script-js', trailingslashit( get_stylesheet_directory_uri() ) . 'js/script.js' , array( 'jquery', 'smootstate-js' ), '1.0.0', true );
+	wp_enqueue_script( 'script-js', trailingslashit( get_stylesheet_directory_uri() ) . 'js/script.js?v=1.1' , array( 'jquery', 'smootstate-js' ), '1.0.0', true );
 
 
 	wp_enqueue_script( 'cluett-3-3-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

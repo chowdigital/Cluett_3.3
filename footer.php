@@ -38,22 +38,22 @@ jQuery(document).ready(function($) {
 			
 
 			<div class="site-info">
-				<div class="site-title">
+				<!--<div class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/cluettlogo.svg"/>
 						<?php bloginfo( 'name' ); ?>
 					</a>
-				</div>
+				</div>-->
 				
 				<div class="site-info-wrap">
 				<div class="site-info-column">
-					<p>16, 17 Argall Ave, Walthamstow, London E10 7QE
+					<p><strong>Cluett Carpentry</strong></p><p>16, 17 Argall Ave, Walthamstow, London E10 7QE
 					<a href="tel:02081681168"><i class="fas fa-phone"></i> 020 8168 1168</a>
 					<a href="mailto:cluettcarpentry@gmail.com">cluettcarpentry@gmail.com</a>
 					<p>
 
 					<p>
-					<a href="#">Privacy Policy</a>
+					<a href="privacy-policy">Privacy Policy</a>
 					</p>
 				</div>
 		

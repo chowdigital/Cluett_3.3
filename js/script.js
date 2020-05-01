@@ -7,7 +7,35 @@
   });
   // START :  Do Things
   function dothings() {
-   
+   // START : Resize Nav
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+$(function  resizeNav() {    
+    // do your stuff if window is wider than 800px
+    if($(window).width() >= 600){
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("masthead").style.height = "40px";
+          document.getElementById("logo-img").style.height = "30px";
+          document.getElementById("logo-img").style.marginTop = "5px";
+          document.getElementById("logo-text").style.opacity = "0";
+
+        } else {
+          document.getElementById("masthead").style.height = "100px";
+          document.getElementById("logo-img").style.height = "80px";
+          document.getElementById("logo-img").style.marginTop = "10px";
+          document.getElementById("logo-text").style.opacity = "1";
+        }
+      } 
+
+    }
+
+
+
+  });
+   // END : Resize Nav
 
     // START : Navigation
       $(function togglemenu() {
@@ -128,7 +156,7 @@
 // END :  Do Things
 
 // START :  Smoothstate
-/*
+
 
 function addBlacklistClass() {
         $( 'a' ).each( function() {
@@ -178,6 +206,6 @@ $( function() {
   $( '#page' ).smoothState( settings );
 } );
 
-*/
+
 // end of script
 })(jQuery, this);
