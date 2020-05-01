@@ -14,7 +14,7 @@
 #masthead
 	z-index: 9999
 
-@media only screen and (max-width: $break_sml)
+@media only screen and (max-width: $break_med)
 	#masthead
 		display: flex
 		padding: 0em 0em
@@ -36,14 +36,14 @@
 		position: fixed
 		z-index: 4
 		height: 58px
-		background-color: $mainCol
+		background-color: $skyblue
 
 		li
 			width: 100%
 			height: 1.5em
 			font-size: 1.5em
 			text-align: center
-			color: $light
+			color: $dark
 
 	.nav-menu
 			float: right
@@ -51,7 +51,7 @@
 			position: fixed
 			right: 0
 			height: 100vh
-			background: $mainCol
+			background: $skyblue
 			top: 0
 			padding-top: 50px
 			width: 100%
@@ -83,7 +83,7 @@
 			position: absolute
 			height: 4px
 			width: 100%
-			background: #fff
+			background: $dark
 			border-radius: 9px
 			opacity: 1
 			left: 0
@@ -145,7 +145,7 @@
 		margin-top: 5px
 		z-index: 5
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: $break_med)
 
 	#masthead
 		height: 100px
@@ -154,6 +154,7 @@
 		display: inline
 		display: flex
 		position: fixed
+		transition: height 0.3s ease-out
 
 	.site-branding
 		width: 40%
@@ -189,6 +190,8 @@
 		height: 80px
 		margin-left: 2em
 		margin-top: 10px
+		transition: width 0.3s, height 0.3s
+
 
 	#logo-text
 		font-size: 30px
@@ -196,6 +199,12 @@
 		margin-top: 20px
 		margin-left: 20px
 		@include txt-bold
+		-webkit-transition: opacity 0.3s ease-in-out
+		-moz-transition: opacity 0.3s ease-in-out
+		-ms-transition: opacity 0.3s ease-in-out
+		-o-transition: opacity 0.3s ease-in-out
+		opacity: 1
+
 
 	.titleText
 		float: left

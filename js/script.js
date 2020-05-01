@@ -10,8 +10,8 @@
    // START : Resize Nav
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 $(function  resizeNav() {    
-    // do your stuff if window is wider than 800px
-    if($(window).width() >= 600){
+    // do your stuff if window is wider than 1000px
+    if($(window).width() >= 1000){
 
       window.onscroll = function() {scrollFunction()};
 

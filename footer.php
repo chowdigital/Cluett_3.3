@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 
 			<div class="contact-form">
 				<h3 class="light-text">Get in touch</h3>
-				<?php echo do_shortcode( '[contact-form-7 id="77" title="START"]' ); ?>
+				<?php echo do_shortcode( '[contact-form-7 id="528" title="Footer"]' ); ?>
 
 			</div>
 			
