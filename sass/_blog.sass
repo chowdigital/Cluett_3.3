@@ -50,3 +50,10 @@
 	.blog-text
 		width: 70%
 		padding-left: 2em
+
+// Fix issues with alighed images looking wank on mobile
+@media only screen and (max-width: $break_med)
+	.wp-block-image .alignright, .wp-block-image .alignleft
+		float: none
+		img 
+			width: 100%

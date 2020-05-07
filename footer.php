@@ -31,9 +31,15 @@ jQuery(document).ready(function($) {
 		<div class="footer-flex">
 
 			<div class="contact-form">
-				<h3 class="light-text">Get in touch</h3>
-				<?php echo do_shortcode( '[contact-form-7 id="528" title="Footer"]' ); ?>
+				<div class="flex-100">
+					<h3 class="light-text">Get in touch</h3>
+				</div>
 
+			
+					<?php echo do_shortcode( '[contact-form-7 id="528" title="Footer"]' ); ?>
+			
+		
+		
 			</div>
 			
 
@@ -64,7 +70,7 @@ jQuery(document).ready(function($) {
 
 			</div><!-- .site-info -->
 
-			<div class="break"></div>
+		
 
 		</div><!-- footer-flex-->
 		<div class="social-links">

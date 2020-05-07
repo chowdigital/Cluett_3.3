@@ -358,7 +358,7 @@ html {
     width: 2em;
     height: auto; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .footer-flex, .site-info-wrap {
     display: -webkit-box;
     display: -moz-box;
@@ -367,7 +367,8 @@ html {
     display: flex; }
 
   .site-info {
-    flex-basis: 60%; }
+    flex-basis: 25%;
+    margin-right: 10%; }
 
   .site-info-wrap {
     justify-content: space-between;
@@ -378,7 +379,24 @@ html {
     height: 100%; }
 
   .contact-form {
-    order: 1; } }
+    order: 1;
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap; }
+
+  .flex-100 {
+    width: 100%; }
+
+  .flex-50 {
+    width: 50%;
+    float: left;
+    margin-top: 1em; }
+
+  .flex-50-r {
+    float: right;
+    width: 50%;
+    margin-top: 1em;
+    padding-left: 1em; } }
 #google-reviews {
   min-height: 200px; }
   #google-reviews h2 {
@@ -613,6 +631,11 @@ ul.products {
   .blog-text {
     width: 70%;
     padding-left: 2em; } }
+@media only screen and (max-width: 1000px) {
+  .wp-block-image .alignright, .wp-block-image .alignleft {
+    float: none; }
+    .wp-block-image .alignright img, .wp-block-image .alignleft img {
+      width: 100%; } }
 .blocks-gallery-grid .blocks-gallery-image figcaption a, .blocks-gallery-grid .blocks-gallery-item figcaption a, .wp-block-gallery .blocks-gallery-image figcaption a, .wp-block-gallery .blocks-gallery-item figcaption a {
   color: #fff; }
 .blocks-gallery-grid .blocks-gallery-image figcaption a:hover, .blocks-gallery-grid .blocks-gallery-item figcaption a:hover, .wp-block-gallery .blocks-gallery-image figcaption a:hover, .wp-block-gallery .blocks-gallery-item figcaption a:hover {

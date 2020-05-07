@@ -39,13 +39,14 @@
 		height: auto
 
 
-@media only screen and (min-width: $break_sml)
+@media only screen and (min-width: $break_med)
 	.footer-flex, .site-info-wrap
 		@include flexbox
 
 
 	.site-info
-		flex-basis: 60%
+		flex-basis: 25%
+		margin-right: 10%
 	
 	
 	.site-info-wrap
@@ -58,6 +59,24 @@
 
 	.contact-form
 		order: 1
+		flex-basis: 65%
+		display: flex
+		flex-wrap: wrap
+
+	.flex-100
+		width: 100%
+	
+	.flex-50
+		width: 50%
+		float: left
+		margin-top: 1em
+
+	.flex-50-r
+		float: right
+		width: 50%
+		margin-top: 1em
+		padding-left: 1em
+
 
 #google-reviews 
 	min-height: 200px
