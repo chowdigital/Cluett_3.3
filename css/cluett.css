@@ -661,6 +661,9 @@ ul.products {
 .blocks-gallery-grid .blocks-gallery-image figcaption a:hover, .blocks-gallery-grid .blocks-gallery-item figcaption a:hover, .wp-block-gallery .blocks-gallery-image figcaption a:hover, .wp-block-gallery .blocks-gallery-item figcaption a:hover {
   color: #1fc0bf; }
 
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+  display: none; }
+
 #boat {
   width: 400px;
   top: 0px;
