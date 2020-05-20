@@ -28,7 +28,8 @@ ul, li, a, input {
   text-decoration: none; }
 
 a:link {
-  color: #0c2b59; }
+  color: #0645AD;
+  text-decoration: underline; }
 
 a:visited {
   color: #0c2b59; }

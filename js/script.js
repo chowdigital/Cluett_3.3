@@ -37,6 +37,11 @@ $(function  resizeNav() {
   });
    // END : Resize Nav
 
+
+
+$(".dropdown-content").click(function(e) {
+    e.stopPropagation(); // if you click on the div itself it will cancel the click event.
+});
     // START : Navigation
       $(function togglemenu() {
          var container, button, menu, links, i, len;
@@ -64,8 +69,9 @@ $(function  resizeNav() {
     menu.className += ' nav-menu';
   }
 
+
   button.onclick = function() {
-    if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+    if ( -1 !== container.className.indexOf( 'toggled' )) {
       container.className = container.className.replace( ' toggled', '' );
       button.setAttribute( 'aria-expanded', 'false' );
       menu.setAttribute( 'aria-expanded', 'false' );
@@ -78,6 +84,9 @@ $(function  resizeNav() {
 
     }
   };
+
+ 
+
 
   // Get all the link elements within the menu.
   links    = menu.getElementsByTagName( 'a' );
