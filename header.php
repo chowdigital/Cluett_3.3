@@ -31,7 +31,7 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					
 					<div class="titleText">
-						<img id="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/cluettlogo.svg"/>
+						<span><img id="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/cluettlogo.svg"/></span><h1 id="logo-text-sml">Cluett Carpentry</h1>
 					</div>
 						<div class="titleText">
 					<h1 id="logo-text">Cluett<br>Carpentry</h1>

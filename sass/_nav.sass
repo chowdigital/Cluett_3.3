@@ -136,8 +136,20 @@
 		display: block
 		z-index: 5
 	
+
+
 	#logo-text
 		display: none
+	
+	#logo-text-sml
+		display: inline-block
+		font-size: 20px
+		position: fixed
+		top: 4px
+		left: 55px
+		font-weight: 600
+		text-transform: uppercase
+
 	
 	#logo-img
 		width: auto
@@ -193,6 +205,9 @@
 		margin-top: 10px
 		transition: width 0.3s, height 0.3s
 
+	#logo-text-sml
+		display: none
+
 
 	#logo-text
 		font-size: 30px
@@ -210,9 +225,13 @@
 	.titleText
 		float: left
 
+	.menu-item a:link
+		text-decoration: none
 
 
-
+@media only screen and (max-width: 450px)
+	#logo-text-sml
+		display: none
 
 
 

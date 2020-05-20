@@ -257,6 +257,15 @@ html {
   #logo-text {
     display: none; }
 
+  #logo-text-sml {
+    display: inline-block;
+    font-size: 20px;
+    position: fixed;
+    top: 4px;
+    left: 55px;
+    font-weight: 600;
+    text-transform: uppercase; }
+
   #logo-img {
     width: auto;
     height: 48px;
@@ -306,6 +315,9 @@ html {
     margin-top: 10px;
     transition: width 0.3s, height 0.3s; }
 
+  #logo-text-sml {
+    display: none; }
+
   #logo-text {
     font-size: 30px;
     line-height: 30px;
@@ -321,7 +333,13 @@ html {
     opacity: 1; }
 
   .titleText {
-    float: left; } }
+    float: left; }
+
+  .menu-item a:link {
+    text-decoration: none; } }
+@media only screen and (max-width: 450px) {
+  #logo-text-sml {
+    display: none; } }
 .site-info-column a:link, .site-info-column a:visited {
   color: #fff; }
 .site-info-column a:hover, .site-info-column a:active {
