@@ -189,7 +189,8 @@ html {
 
   .menu-toggle {
     background: transparent;
-    border: none; }
+    border: none;
+    border: transparent; }
 
   #hamburger {
     top: 12px;
